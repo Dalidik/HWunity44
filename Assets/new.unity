@@ -771,6 +771,7 @@ GameObject:
   - component: {fileID: 1000916415}
   - component: {fileID: 1000916420}
   - component: {fileID: 1000916419}
+  - component: {fileID: 1000916421}
   m_Layer: 0
   m_Name: Robot
   m_TagString: Player
@@ -907,6 +908,22 @@ MonoBehaviour:
   movementSpeed: 10
   rotationSpeed: 0
   fireBall: {fileID: 738045240297552172, guid: 8092e450dfdba3f43a8150adb8641e4b, type: 3}
+--- !u!114 &1000916421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000916414}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e3585ebb375bac4dac78c3f5ca23c13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ball: {fileID: 738045240297552172, guid: 8092e450dfdba3f43a8150adb8641e4b, type: 3}
+  gun: {fileID: 764420244}
+  ballclone: {fileID: 0}
+  power: 100
 --- !u!1 &1050357017
 GameObject:
   m_ObjectHideFlags: 0
@@ -1055,7 +1072,7 @@ GameObject:
   - component: {fileID: 1376334736}
   m_Layer: 0
   m_Name: ExplodePlane
-  m_TagString: Explode
+  m_TagString: Explode1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1119,7 +1136,7 @@ Transform:
   m_GameObject: {fileID: 1376334731}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.8299999, y: -0.9, z: 4.4}
+  m_LocalPosition: {x: -0.8299999, y: -0.89, z: 4.4}
   m_LocalScale: {x: 0.13741104, y: 0.1338, z: 0.14926727}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1158,7 +1175,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 10, y: 0.02, z: 10}
-  m_Center: {x: 0.0000042915344, y: 0, z: 0}
+  m_Center: {x: 0.0000042915344, y: 0, z: 0.0000019073486}
 --- !u!1 &1510582026
 GameObject:
   m_ObjectHideFlags: 0
@@ -1293,7 +1310,7 @@ GameObject:
   - component: {fileID: 1610319625}
   m_Layer: 0
   m_Name: RubberPlane
-  m_TagString: Ruber
+  m_TagString: Rubel1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1357,7 +1374,7 @@ Transform:
   m_GameObject: {fileID: 1610319620}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.8299999, y: -0.9, z: 1.22}
+  m_LocalPosition: {x: -0.8299999, y: -0.89, z: 1.22}
   m_LocalScale: {x: 0.13741104, y: 0.1338, z: 0.14926727}
   m_ConstrainProportionsScale: 0
   m_Children: []

@@ -13,11 +13,12 @@ public class fire : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       if(Input.GetMouseButtonDown(1))
-       {
-        ballclone = Instantiate(ball, gun.transform.position, Quaternion.identity);
-        ballclone.GetComponent<Rigidbody>().AddForce(gun.transform.forward * power * 10);
-        Destroy(ballclone, 3);
-       } 
+        if (Input.GetMouseButtonDown(0))
+        {
+            ballclone = Instantiate(ball, gun.transform.position, Quaternion.identity);
+            ballclone.GetComponent<Rigidbody>().AddForce(gun.transform.forward * power * 10);
+            Destroy(ballclone, 3);
+        }
     }
+   
 }

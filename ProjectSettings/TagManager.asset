@@ -5,9 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
-  - Explode1
   - Fire1
-  - Rubel1
+  - Explode
+  - Ruber
   layers:
   - Default
   - TransparentFX
